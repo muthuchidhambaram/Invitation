@@ -144,7 +144,7 @@ YII_CSRF_TOKEN='ea5b2a797b51275165fb758f5f414b859aad5e17';
     <div class="vcard-separator" ng-show="view.venue || view.address.city || view.address.state || view.address.zip"></div>
     <div class="vcard-row" ng-show="view.venue || view.address.city || view.address.state || view.address.zip || view.address.street || view.address.country">
         <label>Where</label>
-        <i class="icon icon-event-location"></i>
+        <i class="">  <img src="./Event Page_files/where.jpg" width=45></i>
         <h4 class="ng-binding">ஸ்ரீ அம்பாள் திருமண்டபம்.</h4>
         <h4 class="ng-binding">ஸ்ரீ அம்பாள் நகர் </h4>
         <h4 class="ng-binding">Puthukkadai<span ng-show="view.address.state || view.address.zip" class="ng-binding"><span ng-show="view.address.city">,</span> TN 629171</span>
@@ -161,20 +161,20 @@ YII_CSRF_TOKEN='ea5b2a797b51275165fb758f5f414b859aad5e17';
         <label class="">Facility Features</label>
         <ul class="features-container">
             <!-- ngRepeat: feature in view.features track by $index --><li ng-repeat="feature in view.features track by $index" class="ng-scope">
-                <i ng-class="&#39;icon icon-event-features-&#39; + feature" class="icon icon-event-features-7"></i>
+        <i class="">  <img src="./Event Page_files/parking.jpg" width=45></i>
             </li><!-- end ngRepeat: feature in view.features track by $index --><li ng-repeat="feature in view.features track by $index" class="ng-scope">
-                <i ng-class="&#39;icon icon-event-features-&#39; + feature" class="icon icon-event-features-13"></i>
+        <i class="">  <img src="./Event Page_files/Food.jpg" width=45></i>
             </li><!-- end ngRepeat: feature in view.features track by $index --><li ng-repeat="feature in view.features track by $index" class="ng-scope">
-                <i ng-class="&#39;icon icon-event-features-&#39; + feature" class="icon icon-event-features-11"></i>
+        <i class="">  <img src="./Event Page_files/Cofee.jpg" width=45></i>
             </li><!-- end ngRepeat: feature in view.features track by $index --><li ng-repeat="feature in view.features track by $index" class="ng-scope">
-                <i ng-class="&#39;icon icon-event-features-&#39; + feature" class="icon icon-event-features-2"></i>
+        <i class="">  <img src="./Event Page_files/sitting.jpg" width=45></i>
             </li><!-- end ngRepeat: feature in view.features track by $index -->
         </ul>
     </div>
     <div class="vcard-separator" ng-show="view.about"></div>
     <div class="vcard-row" ng-show="view.about" ng-init="aboutShowMore= false">
         <label>About</label>
-        <i class="icon icon-event-about"></i>
+        <i class="">  <img src="./Event Page_files/About.jpg" width=45></i>
         <h4 class="text-break ng-binding" ng-show="!aboutShowMore">தங்கள் நல்வரவை அன்புடன் நாடும் அஞ்சு மஞ்சு சப்பல்ஸ் குடும்பத்தினர்<span ng-show="view.about.length &gt; 185" class="ng-hide">...</span></h4>
         <h4 class="text-break ng-binding ng-hide" ng-show="aboutShowMore">தங்கள் நல்வரவை அன்புடன் நாடும் அஞ்சு மஞ்சு சப்பல்ஸ் குடும்பத்தினர்</h4>
         <div class="floated-container ng-hide" ng-show="view.about.length &gt; 185">
@@ -187,7 +187,7 @@ YII_CSRF_TOKEN='ea5b2a797b51275165fb758f5f414b859aad5e17';
     <div class="vcard-separator" ng-show="view.contact.organizer || view.contact.phone || view.contact.email || view.contact.website"></div>
     <div class="vcard-row event-contact" ng-show="view.contact.organizer || view.contact.phone || view.contact.email || view.contact.website">
         <label>Contact</label>
-        <i class="icon icon-event-contact"></i>
+        <i class="">  <img src="./Event Page_files/call.jpg" width=45></i>
 
         <div ng-show="view.contact.organizer">
             <h4 class="text-ellipsis ng-binding">எம். நாகராஜன்</h4>
