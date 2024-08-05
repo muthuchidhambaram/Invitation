@@ -1540,6 +1540,9 @@ YII_CSRF_TOKEN='ea5b2a797b51275165fb758f5f414b859aad5e17';
             var videoContainer = document.getElementById('video-container');
 
             video.play();
+        video.addEventListener('play', function() {
+                video.muted = false;
+            });
 
             video.addEventListener('ended', function() {
                 videoContainer.style.display = 'none';
