@@ -46,9 +46,7 @@ YII_CSRF_TOKEN='ea5b2a797b51275165fb758f5f414b859aad5e17';
  முகூர்த்த நேரம் 08.09.2024 காலை 10.45 முதல் 11.45 வரை">
     <meta itemprop="image" content="http:https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account35761110/46965203_3.png?0.1191814904799875">
 <style>
-body, html {
-            background-color: black;
-}
+
         .video-container {
             position: relative;
             width: 100%;
@@ -1541,16 +1539,16 @@ body, html {
 
             //video.muted = true; // Start the video muted to ensure autoplay
             video.play();
-
+document.body.style.backgroundColor = 'black';
             //video.addEventListener('playing', function() {
                // video.muted = false; // Unmute the video once it starts playing
            // });
 
             video.addEventListener('ended', function() {
                 videoContainer.style.display = 'none';
-                document.body.style.backgroundColor = 'white';
-                Container.style.display = 'block';
                 
+                Container.style.display = 'block';
+                document.body.style.backgroundColor = 'transparent';
             });
         });
 /*]]>*/
