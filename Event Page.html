@@ -1535,7 +1535,16 @@ body, html {
         return dayJsDateDifference(today, endDate);
     }
 
+    document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('video');
+            var videoContainer = document.getElementById('video-container');
 
+            video.play();
+
+            video.addEventListener('ended', function() {
+                videoContainer.style.display = 'none';
+            });
+        });
 /*]]>*/
 </script>
 
